@@ -1,0 +1,19 @@
+{
+    "name": "langs",
+    "version": "1.0.0",
+    "description": "ISO 639-1/2/3 Language codes with English and local names",
+    "keywords": ["639", "639-1", "639-2", "639-3", "iso", "iso639", "lang", "langs", "languages"],
+    "license": "MIT",
+    "main": "src/index.js",
+    "scripts": {
+        "test": "node_modules/.bin/mocha --ui tdd --reporter spec test.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:adlawson/langs.js"
+    },
+    "devDependencies": {
+        "chai": "~1.9",
+        "mocha": "~1.21"
+    }
+}
