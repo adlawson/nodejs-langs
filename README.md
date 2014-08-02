@@ -6,9 +6,7 @@
 [![Published version][ico-package]][npm]
 [![MIT Licensed][ico-license]][license]
 
-```bash
-$ npm install langs
-```
+### `$ npm install langs`
 
 This library provides ISO 639-1/2/3 language codes with English and local
 names. It can be installed in whichever way you prefer, but I recommend
