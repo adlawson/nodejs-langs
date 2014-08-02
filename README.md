@@ -2,8 +2,9 @@
 
 <img src="http://media.giphy.com/media/ZJqPtMjmHbNN6/giphy.gif" alt="Langs" align="right" width=280/>
 
-**Version:** *1.0.1*<br/>
-**Master build:** [![Master branch build status][travis-master]][travis]<br/>
+[![Master branch build status][ico-build]][travis]
+[![Published version][ico-package]][npm]
+[![MIT Licensed][ico-license]][license]
 
 ```bash
 $ npm install langs
@@ -147,9 +148,11 @@ The content of this library is released under the **MIT License** by
 [`LICENSE`][license] or at http://www.opensource.org/licenses/mit.
 
 <!-- Links -->
-[travis]: https://travis-ci.org/adlawson/langs.js
-[travis-master]: https://travis-ci.org/adlawson/langs.js.png?branch=master
 [npm]: https://npmjs.org/package/langs
+[travis]: https://travis-ci.org/adlawson/langs.js
+[ico-license]: http://img.shields.io/npm/l/langs.svg?style=flat
+[ico-package]: http://img.shields.io/npm/v/langs.svg?style=flat
+[ico-build]: http://img.shields.io/travis/adlawson/langs.js/master.svg?style=flat
 [license]: /LICENSE
 [wiki]: http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
 [wiki-macro]: http://en.wikipedia.org/wiki/ISO_639_macrolanguage
