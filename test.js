@@ -59,6 +59,18 @@ suite('langs:', function () {
             assert.notEqual(langs.codes("3").indexOf("eng"), -1);
         });
 
+        test('`langs.codes(1)` contains "en"', function () {
+            assert.notEqual(langs.codes(1).indexOf("en"), -1);
+        });
+
+        test('`langs.codes(2)` contains "eng"', function () {
+            assert.notEqual(langs.codes(2).indexOf("eng"), -1);
+        });
+
+        test('`langs.codes(3)` contains "eng"', function () {
+            assert.notEqual(langs.codes(3).indexOf("eng"), -1);
+        });
+
         test('`langs.codes("1")` contains "ko"', function () {
             assert.notEqual(langs.codes("1").indexOf("ko"), -1);
         });
@@ -79,6 +91,18 @@ suite('langs:', function () {
             assert.notEqual(langs.codes("3").indexOf("kor"), -1);
         });
 
+        test('`langs.codes(1)` contains "ko"', function () {
+            assert.notEqual(langs.codes(1).indexOf("ko"), -1);
+        });
+
+        test('`langs.codes(2)` contains "kor"', function () {
+            assert.notEqual(langs.codes(2).indexOf("kor"), -1);
+        });
+
+        test('`langs.codes(3)` contains "kor"', function () {
+            assert.notEqual(langs.codes(3).indexOf("kor"), -1);
+        });
+
         test('`langs.codes("1")` doesn\'t contain "zz"', function () {
             assert.equal(langs.codes("1").indexOf("zz"), -1);
         });
@@ -97,6 +121,18 @@ suite('langs:', function () {
 
         test('`langs.codes("3")` doesn\'t contain "zzz"', function () {
             assert.equal(langs.codes("3").indexOf("zzz"), -1);
+        });
+
+        test('`langs.codes(1)` doesn\'t contain "zz"', function () {
+            assert.equal(langs.codes(1).indexOf("zz"), -1);
+        });
+
+        test('`langs.codes(2)` doesn\'t contain "zzz"', function () {
+            assert.equal(langs.codes(2).indexOf("zzz"), -1);
+        });
+
+        test('`langs.codes(3)` doesn\'t contain "zzz"', function () {
+            assert.equal(langs.codes(3).indexOf("zzz"), -1);
         });
 
         test('`langs.codes("foo")` is undefined', function () {
@@ -165,6 +201,18 @@ suite('langs:', function () {
 
         test('`langs.has("3", "eng")` is `true`', function () {
             assert.isTrue(langs.has("3", "eng"), eng);
+        });
+
+        test('`langs.has(1, "en")` is `true`', function () {
+            assert.isTrue(langs.has(1, "en"), eng);
+        });
+
+        test('`langs.has(2, "eng")` is `true`', function () {
+            assert.isTrue(langs.has(2, "eng"), eng);
+        });
+
+        test('`langs.has(3, "eng")` is `true`', function () {
+            assert.isTrue(langs.has(3, "eng"), eng);
         });
 
         test('`langs.has("name", "Korean")` is `true`', function () {
@@ -261,6 +309,18 @@ suite('langs:', function () {
             assert.strictEqual(langs.where("3", "eng"), eng);
         });
 
+        test('`langs.where(1, "en")` is `{"name":"English", "local":"English", "1":"en", "2":"eng", "2T":"eng", "2B":"eng", "3":"eng"}`', function () {
+            assert.strictEqual(langs.where(1, "en"), eng);
+        });
+
+        test('`langs.where(2, "eng")` is `{"name":"English", "local":"English", "1":"en", "2":"eng", "2T":"eng", "2B":"eng", "3":"eng"}`', function () {
+            assert.strictEqual(langs.where(2, "eng"), eng);
+        });
+
+        test('`langs.where(3, "eng")` is `{"name":"English", "local":"English", "1":"en", "2":"eng", "2T":"eng", "2B":"eng", "3":"eng"}`', function () {
+            assert.strictEqual(langs.where(3, "eng"), eng);
+        });
+
         test('`langs.where("name", "Korean")` is `{"name":"Korean", "local":"한국어", "1":"ko", "2":"kor", "2T":"kor", "2B":"kor", "3":"kor"}`', function () {
             assert.strictEqual(langs.where("name", "Korean"), kor);
         });
@@ -289,6 +349,18 @@ suite('langs:', function () {
             assert.strictEqual(langs.where("3", "kor"), kor);
         });
 
+        test('`langs.where(1, "ko")` is `{"name":"Korean", "local":"한국어", "1":"ko", "2":"kor", "2T":"kor", "2B":"kor", "3":"kor"}`', function () {
+            assert.strictEqual(langs.where(1, "ko"), kor);
+        });
+
+        test('`langs.where(2, "kor")` is `{"name":"Korean", "local":"한국어", "1":"ko", "2":"kor", "2T":"kor", "2B":"kor", "3":"kor"}`', function () {
+            assert.strictEqual(langs.where(2, "kor"), kor);
+        });
+
+        test('`langs.where(3, "kor")` is `{"name":"Korean", "local":"한국어", "1":"ko", "2":"kor", "2T":"kor", "2B":"kor", "3":"kor"}`', function () {
+            assert.strictEqual(langs.where(3, "kor"), kor);
+        });
+
         test('`langs.where("name", "Geordie")` is undefined', function () {
             assert.isUndefined(langs.where("name", "Geordie"));
         });
@@ -315,6 +387,18 @@ suite('langs:', function () {
 
         test('`langs.where("3", "zzz")` is undefined', function () {
             assert.isUndefined(langs.where("3", "zzz"));
+        });
+
+        test('`langs.where(1, "zz")` is undefined', function () {
+            assert.isUndefined(langs.where(1, "zz"));
+        });
+
+        test('`langs.where(2, "zzz")` is undefined', function () {
+            assert.isUndefined(langs.where(2, "zzz"));
+        });
+
+        test('`langs.where(3, "zzz")` is undefined', function () {
+            assert.isUndefined(langs.where(3, "zzz"));
         });
 
         test('`langs.where("foo", "eng")` is undefined', function () {

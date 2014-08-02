@@ -57,6 +57,6 @@ function forAll(arr, fn) {
 
 // isValidType :: String -> Boolean
 function isValidType(type) {
-    var types = ['1', '2', '2B', '2T', '3'];
+    var types = [1, 2, 3, '1', '2', '2B', '2T', '3'];
     return -1 !== types.indexOf(type);
 }
