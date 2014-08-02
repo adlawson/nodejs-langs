@@ -1,8 +1,8 @@
 {
     "name": "langs",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "ISO 639-1/2/3 Language codes with English and local names",
-    "keywords": ["639", "639-1", "639-2", "639-3", "iso", "iso639", "lang", "langs", "languages"],
+    "keywords": ["639", "639-1", "639-2", "639-3", "iso", "iso639", "lang", "langs", "language", "languages"],
     "license": "MIT",
     "main": "src/index.js",
     "scripts": {

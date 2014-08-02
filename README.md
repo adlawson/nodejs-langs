@@ -2,7 +2,7 @@
 
 <img src="http://media.giphy.com/media/ZJqPtMjmHbNN6/giphy.gif" alt="Langs" align="right" width=280/>
 
-**Version:** *1.0.0*<br/>
+**Version:** *1.0.1*<br/>
 **Master build:** [![Master branch build status][travis-master]][travis]<br/>
 
 ```bash
@@ -21,6 +21,7 @@ this library are:
  - `ISO 639-2/2T` 3 characters, one per language
  - `ISO 639-2B` 3 characters, mostly the same as `639-2T` but with some derived from their English name rather than local name
  - `ISO 639-3` 3 characters, mostly the same as `639-2T` but using the canonical ISO 639 macrolanguage code
+
 The macrolanguages described above cover cases where a language is considered
 to be a dialect of another in some standards but not in others, e.g Standard
 Arabic `arb` and Arabic `ara`. There's more information on the
