@@ -147,10 +147,10 @@ The content of this library is released under the **MIT License** by
 
 <!-- Links -->
 [npm]: https://npmjs.org/package/langs
-[travis]: https://travis-ci.org/adlawson/langs.js
+[travis]: https://travis-ci.org/adlawson/nodejs-langs
 [ico-license]: http://img.shields.io/npm/l/langs.svg?style=flat
 [ico-package]: http://img.shields.io/npm/v/langs.svg?style=flat
-[ico-build]: http://img.shields.io/travis/adlawson/langs.js/master.svg?style=flat
+[ico-build]: http://img.shields.io/travis/adlawson/nodejs-langs/master.svg?style=flat
 [license]: /LICENSE
 [wiki]: http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
 [wiki-macro]: http://en.wikipedia.org/wiki/ISO_639_macrolanguage
