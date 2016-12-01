@@ -7,7 +7,7 @@ suite('langs:', function () {
     var kor = {};
 
     setup(function () {
-        data = require('./data.json');
+        data = require('./data');
         eng = data[40];
         kor = data[85];
     });
