@@ -1,4 +1,4 @@
-var data = require('./data.json');
+var data = require('./data');
 
 var langs = {
     all:   allLanguages,
