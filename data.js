@@ -124,7 +124,7 @@ module.exports = [
     {"name":"Ossetian", "local":"ирон æвзаг", "1":"os", "2":"oss", "2T":"oss", "2B":"oss", "3":"oss"},
     {"name":"Panjabi", "local":"ਪੰਜਾਬੀ", "1":"pa", "2":"pan", "2T":"pan", "2B":"pan", "3":"pan"},
     {"name":"Pāli", "local":"पाऴि", "1":"pi", "2":"pli", "2T":"pli", "2B":"pli", "3":"pli"},
-    {"name":"Persian", "local":"فارسی", "1":"fa", "2":"fas", "2T":"fas", "2B":"per", "3":"fas"},
+    {"name":"Persian", "local":"فارسی", "1":"fa", "2":"fas", "2T":"fas", "2B":"per", "3":"fas", "alias": ["Farsi"]},
     {"name":"Polish", "local":"język polski", "1":"pl", "2":"pol", "2T":"pol", "2B":"pol", "3":"pol"},
     {"name":"Pashto", "local":"پښتو", "1":"ps", "2":"pus", "2T":"pus", "2B":"pus", "3":"pus"},
     {"name":"Portuguese", "local":"português", "1":"pt", "2":"por", "2T":"por", "2B":"por", "3":"por"},
