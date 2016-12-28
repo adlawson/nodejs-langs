@@ -5,7 +5,8 @@ var langs = {
     has:   hasLanguage,
     codes: getCodes,
     names: getNames,
-    where: findBy
+    where: findBy,
+    like:  like
 };
 
 module.exports = langs;
@@ -59,4 +60,21 @@ function forAll(arr, fn) {
 function isValidType(type) {
     var types = [1, 2, 3, '1', '2', '2B', '2T', '3'];
     return -1 !== types.indexOf(type);
+}
+
+// like :: String -> String
+function like(name, ignoreCase) {
+    for (var i = 0; i < data.length; i++) {
+        var lookup = data[i].alias || [];
+        lookup.push(data[i].name);
+        lookup.push(data[i].local);
+        if (ignoreCase) {
+            lookup = lookup.map(function (variant) {
+                return variant.toLowerCase();
+            });
+        }
+        if (lookup.indexOf(name) !== -1) {
+            return data[i];
+        }
+    }
 }
