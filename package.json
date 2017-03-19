@@ -10,7 +10,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git@github.com:adlawson/langs.js"
+        "url": "git@github.com:adlawson/nodejs-langs.js"
     },
     "devDependencies": {
         "chai": "~1.9",
