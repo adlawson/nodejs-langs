@@ -36,7 +36,7 @@ module.exports = [
     {"name":"Croatian", "local":"Hrvatski", "1":"hr", "2":"hrv", "2T":"hrv", "2B":"hrv", "3":"hrv"},
     {"name":"Czech", "local":"Čeština", "1":"cs", "2":"ces", "2T":"ces", "2B":"cze", "3":"ces"},
     {"name":"Danish", "local":"Dansk", "1":"da", "2":"dan", "2T":"dan", "2B":"dan", "3":"dan"},
-    {"name":"Divehi", "local":"Divehi", "1":"iv", "2":"div", "2T":"div", "2B":"div", "3":"div"},
+    {"name":"Divehi", "local":"Divehi", "1":"dv", "2":"div", "2T":"div", "2B":"div", "3":"div"},
     {"name":"Dutch", "local":"Nederlands", "1":"nl", "2":"nld", "2T":"nld", "2B":"dut", "3":"nld"},
     {"name":"Dzongkha", "local":"རྫོང་ཁ", "1":"dz", "2":"dzo", "2T":"dzo", "2B":"dzo", "3":"dzo"},
     {"name":"English", "local":"English", "1":"en", "2":"eng", "2T":"eng", "2B":"eng", "3":"eng"},
@@ -184,4 +184,3 @@ module.exports = [
     {"name":"Zhuang", "local":"Cuengh", "1":"za", "2":"zha", "2T":"zha", "2B":"zha", "3":"zha"},
     {"name":"Zulu", "local":"isiZulu", "1":"zu", "2":"zul", "2T":"zul", "2B":"zul", "3":"zul"}
 ];
-
