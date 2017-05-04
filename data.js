@@ -1,4 +1,4 @@
-module.exports = [
+[
     {"name":"Abkhaz", "local":"Аҧсуа", "1":"ab", "2":"abk", "2T":"abk", "2B":"abk", "3":"abk"},
     {"name":"Afar", "local":"Afaraf", "1":"aa", "2":"aar", "2T":"aar", "2B":"aar", "3":"aar"},
     {"name":"Afrikaans", "local":"Afrikaans", "1":"af", "2":"afr", "2T":"afr", "2B":"afr", "3":"afr"},
@@ -183,4 +183,4 @@ module.exports = [
     {"name":"Yoruba", "local":"Yorùbá", "1":"yo", "2":"yor", "2T":"yor", "2B":"yor", "3":"yor"},
     {"name":"Zhuang", "local":"Cuengh", "1":"za", "2":"zha", "2T":"zha", "2B":"zha", "3":"zha"},
     {"name":"Zulu", "local":"isiZulu", "1":"zu", "2":"zul", "2T":"zul", "2B":"zul", "3":"zul"}
-];
+]

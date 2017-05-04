@@ -1,0 +1,9 @@
+{
+  "name": "anurbol/languages-json",
+  "license": "MIT",
+      "extra": {
+        "branch-alias": {
+            "dev-master": "2.0-dev"
+        }
+    }
+}
