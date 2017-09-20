@@ -37,11 +37,23 @@ function getNames(local) {
 }
 
 // findBy :: String, String -> Language
-function findBy(crit, val) {
+function findBy(crit, val, multiple = false) {
+    let result = [];
+
     for (var i = 0; i < data.length; i++) {
-        if (val === data[i][crit]) {
-            return data[i];
+        if (
+            val instanceof RegExp && val.test(data[i][crit])
+            || val === data[i][crit]
+        ) {
+            if(!multiple){
+                return data[i];
+            }
+            result.push(data[i]);
         }
+    }
+
+    if(multiple){
+        return result;
     }
 }
 
