@@ -10,6 +10,8 @@ suite('langs:', function () {
         data = require('./data');
         eng = data[40];
         kor = data[85];
+        aar = data[1];
+        afr = data[2];
     });
 
     test('`langs` is an object', function () {
@@ -321,6 +323,14 @@ suite('langs:', function () {
             assert.strictEqual(langs.where(3, "eng"), eng);
         });
 
+        test('`langs.where("name", /english/i)` is `{"name":"English", "local":"English", "1":"en", "2":"eng", "2T":"eng", "2B":"eng", "3":"eng"}`', function () {
+            assert.deepEqual(langs.where("name", /english/i), eng);
+        });
+
+        test('`langs.where("name", /english/i, true)` is `[{"name":"Afar", "local":"Afaraf", "1":"aa", "2":"aar", "2T":"aar", "2B":"aar", "3":"aar"},{"name":"Afrikaans", "local":"Afrikaans", "1":"af", "2":"afr", "2T":"afr", "2B":"afr", "3":"afr"}]`', function () {
+            assert.deepEqual(langs.where("name", /Af/, true), [aar, afr]);
+        });
+
         test('`langs.where("name", "Korean")` is `{"name":"Korean", "local":"한국어", "1":"ko", "2":"kor", "2T":"kor", "2B":"kor", "3":"kor"}`', function () {
             assert.strictEqual(langs.where("name", "Korean"), kor);
         });
@@ -367,6 +377,10 @@ suite('langs:', function () {
 
         test('`langs.where("local", "Geordie")` is undefined', function () {
             assert.isUndefined(langs.where("local", "Geordie"));
+        });
+
+        test('`langs.where("local", /한국z$/)` is undefined', function () {
+            assert.isUndefined(langs.where("local", /한국z$/), kor);
         });
 
         test('`langs.where("1", "zz")` is undefined', function () {

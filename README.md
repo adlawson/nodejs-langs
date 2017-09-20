@@ -126,6 +126,15 @@ langs.has("name", "Geordie");
 
 langs.has("high", "fives");
 // false
+
+langs.where("name", /af/i);
+// {"name":"Afar", "local":"Afaraf", "1":"aa", "2":"aar", "2T":"aar", "2B":"aar", "3":"aar"}
+
+langs.where("name", /Af/, true);
+// [
+//   {"name":"Afar", "local":"Afaraf", "1":"aa", "2":"aar", "2T":"aar", "2B":"aar", "3":"aar"},
+//   {"name":"Afrikaans", "local":"Afrikaans", "1":"af", "2":"afr", "2T":"afr", "2B":"afr", "3":"afr"}
+// ]
 ```
 
 ## Contributing
