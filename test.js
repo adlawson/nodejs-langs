@@ -9,7 +9,7 @@ suite('langs:', function () {
     setup(function () {
         data = require('./data');
         eng = data[40];
-        kor = data[85];
+        kor = data[86];
     });
 
     test('`langs` is an object', function () {

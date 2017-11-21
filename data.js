@@ -55,6 +55,7 @@ module.exports = [
     {"name":"Guaraní", "local":"Avañe'ẽ", "1":"gn", "2":"grn", "2T":"grn", "2B":"grn", "3":"grn"},
     {"name":"Gujarati", "local":"ગુજરાતી", "1":"gu", "2":"guj", "2T":"guj", "2B":"guj", "3":"guj"},
     {"name":"Haitian", "local":"Kreyòl Ayisyen", "1":"ht", "2":"hat", "2T":"hat", "2B":"hat", "3":"hat"},
+    {"name":"Hassaniyya", "local":"حسانية‎", "1":"ar", "2":"mey", "2T":"mey", "2B":"mey", "3":"mey"},
     {"name":"Hausa", "local":"هَوُسَ", "1":"ha", "2":"hau", "2T":"hau", "2B":"hau", "3":"hau"},
     {"name":"Hebrew", "local":"עברית", "1":"he", "2":"heb", "2T":"heb", "2B":"heb", "3":"heb"},
     {"name":"Herero", "local":"Otjiherero", "1":"hz", "2":"her", "2T":"her", "2B":"her", "3":"her"},
