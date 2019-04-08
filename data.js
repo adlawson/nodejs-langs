@@ -152,6 +152,7 @@ module.exports = [
     {"name":"Swahili", "local":"Kiswahili", "1":"sw", "2":"swa", "2T":"swa", "2B":"swa", "3":"swa"},
     {"name":"Swati", "local":"SiSwati", "1":"ss", "2":"ssw", "2T":"ssw", "2B":"ssw", "3":"ssw"},
     {"name":"Swedish", "local":"Svenska", "1":"sv", "2":"swe", "2T":"swe", "2B":"swe", "3":"swe"},
+    {"name":"Swiss German", "local":"Schwyzerdütsch", "3":"gsw"},
     {"name":"Tamil", "local":"தமிழ்", "1":"ta", "2":"tam", "2T":"tam", "2B":"tam", "3":"tam"},
     {"name":"Telugu", "local":"తెలుగు", "1":"te", "2":"tel", "2T":"tel", "2B":"tel", "3":"tel"},
     {"name":"Tajik", "local":"Тоҷикӣ", "1":"tg", "2":"tgk", "2T":"tgk", "2B":"tgk", "3":"tgk"},
