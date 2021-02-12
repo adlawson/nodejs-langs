@@ -5,11 +5,13 @@ suite('langs:', function () {
     var data = {};
     var eng = {};
     var kor = {};
+    var yue = {};
 
     setup(function () {
         data = require('./data');
-        eng = data[40];
-        kor = data[85];
+        eng = data[41];
+        kor = data[86];
+        yue = data[25];
     });
 
     test('`langs` is an object', function () {
@@ -103,6 +105,38 @@ suite('langs:', function () {
             assert.notEqual(langs.codes(3).indexOf("kor"), -1);
         });
 
+        test('`langs.codes("1")` doesn\'t contain "yue"', function () {
+            assert.equal(langs.codes("1").indexOf("yue"), -1);
+        });
+
+        test('`langs.codes("2")` doesn\'t contain "yue"', function () {
+            assert.equal(langs.codes("2").indexOf("yue"), -1);
+        });
+
+        test('`langs.codes("2T")` doesn\'t contain "yue"', function () {
+            assert.equal(langs.codes("2T").indexOf("yue"), -1);
+        });
+
+        test('`langs.codes("2B")` doesn\'t contain "yue"', function () {
+            assert.equal(langs.codes("2B").indexOf("yue"), -1);
+        });
+
+        test('`langs.codes("3")` contains "yue"', function () {
+            assert.notEqual(langs.codes("3").indexOf("yue"), -1);
+        });
+
+        test('`langs.codes(1)` doesn\'t contain "yue"', function () {
+            assert.equal(langs.codes(1).indexOf("yue"), -1);
+        });
+
+        test('`langs.codes(2)` doesn\'t contain "yue"', function () {
+            assert.equal(langs.codes(2).indexOf("yue"), -1);
+        });
+
+        test('`langs.codes(3)` contains "yue"', function () {
+            assert.notEqual(langs.codes(3).indexOf("yue"), -1);
+        });
+
         test('`langs.codes("1")` doesn\'t contain "zz"', function () {
             assert.equal(langs.codes("1").indexOf("zz"), -1);
         });
@@ -159,6 +193,14 @@ suite('langs:', function () {
 
         test('`langs.names(true)` contains "한국어"', function () {
             assert.notEqual(langs.names(true).indexOf("한국어"), -1);
+        });
+
+        test('`langs.names()` contains "Cantonese"', function () {
+            assert.notEqual(langs.names().indexOf("Cantonese"), -1);
+        });
+
+        test('`langs.names(true)` contains "粤语"', function () {
+            assert.notEqual(langs.names(true).indexOf("粤语"), -1);
         });
 
         test('`langs.names()` doesn\'t contain "Geordie"', function () {
@@ -241,6 +283,34 @@ suite('langs:', function () {
 
         test('`langs.has("3", "kor")` is `true`', function () {
             assert.isTrue(langs.has("3", "kor"), kor);
+        });
+
+        test('`langs.has("name", "Cantonese")` is `true`', function () {
+            assert.isTrue(langs.has("name", "Cantonese"), yue);
+        });
+
+        test('`langs.has("local", "粤语")` is `true`', function () {
+            assert.isTrue(langs.has("local", "粤语"), yue);
+        });
+
+        test('`langs.has("1", "yue")` is `true`', function () {
+            assert.isFalse(langs.has("1", "yue"));
+        });
+
+        test('`langs.has("2", "yue")` is `true`', function () {
+            assert.isFalse(langs.has("2", "yue"));
+        });
+
+        test('`langs.has("2T", "yue")` is `true`', function () {
+            assert.isFalse(langs.has("2T", "yue"));
+        });
+
+        test('`langs.has("2B", "yue")` is `true`', function () {
+            assert.isFalse(langs.has("2B", "yue"));
+        });
+
+        test('`langs.has("3", "yue")` is `true`', function () {
+            assert.isTrue(langs.has("3", "yue"), yue);
         });
 
         test('`langs.has("name", "Geordie")` is `false`', function () {
@@ -359,6 +429,46 @@ suite('langs:', function () {
 
         test('`langs.where(3, "kor")` is `{"name":"Korean", "local":"한국어", "1":"ko", "2":"kor", "2T":"kor", "2B":"kor", "3":"kor"}`', function () {
             assert.strictEqual(langs.where(3, "kor"), kor);
+        });
+
+        test('`langs.where("name", "Cantonese")` is `{"name":"Cantonese", "local":"粤语", "3":"yue"}`', function () {
+            assert.strictEqual(langs.where("name", "Cantonese"), yue);
+        });
+
+        test('`langs.where("local", "粤语")` is `{"name":"Cantonese", "local":"粤语", "3":"yue"}`', function () {
+            assert.strictEqual(langs.where("local", "粤语"), yue);
+        });
+
+        test('`langs.where("1", "yue")` is `undefined`', function () {
+            assert.strictEqual(langs.where("1", "yue"), undefined);
+        });
+
+        test('`langs.where("2", "yue")` is `undefined`', function () {
+            assert.strictEqual(langs.where("2", "yue"), undefined);
+        });
+
+        test('`langs.where("2T", "yue")` is `undefined`', function () {
+            assert.strictEqual(langs.where("2T", "yue"), undefined);
+        });
+
+        test('`langs.where("2B", "yue")` is `undefined`', function () {
+            assert.strictEqual(langs.where("2B", "yue"), undefined);
+        });
+
+        test('`langs.where("3", "yue")` is `{"name":"Cantonese", "local":"粤语", "3":"yue"}`', function () {
+            assert.strictEqual(langs.where("3", "yue"), yue);
+        });
+
+        test('`langs.where(1, "yue")` is `undefined`', function () {
+            assert.strictEqual(langs.where(1, "yue"), undefined);
+        });
+
+        test('`langs.where(2, "yue")` is `undefined`', function () {
+            assert.strictEqual(langs.where(2, "yue"), undefined);
+        });
+
+        test('`langs.where(3, "yue")` is `{"name":"Cantonese", "local":"粤语", "3":"yue"}`', function () {
+            assert.strictEqual(langs.where(3, "yue"), yue);
         });
 
         test('`langs.where("name", "Geordie")` is undefined', function () {
