@@ -28,7 +28,7 @@ Arabic `arb` and Arabic `ara`. There's more information on the
 
 ## Documentation
 ```js
-var langs = require('langs');
+var langs = import('langs');
 
 langs.all();
 // [
