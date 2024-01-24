@@ -1,4 +1,4 @@
-var data = require('./data');
+import data from './data';
 
 var langs = {
     all:   allLanguages,
@@ -8,7 +8,7 @@ var langs = {
     where: findBy
 };
 
-module.exports = langs;
+export default langs;
 
 // allLanguages :: -> Language[]
 function allLanguages() {

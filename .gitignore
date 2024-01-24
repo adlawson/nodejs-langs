@@ -1,3 +1,5 @@
 .vagrant
 node_modules
 Vagrantfile
+dist/
+test/**/package-lock.json

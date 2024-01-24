@@ -1,4 +1,4 @@
-module.exports = [
+export default [
     {"name":"Abkhaz", "local":"Аҧсуа", "1":"ab", "2":"abk", "2T":"abk", "2B":"abk", "3":"abk"},
     {"name":"Afar", "local":"Afaraf", "1":"aa", "2":"aar", "2T":"aar", "2B":"aar", "3":"aar"},
     {"name":"Afrikaans", "local":"Afrikaans", "1":"af", "2":"afr", "2T":"afr", "2B":"afr", "3":"afr"},
