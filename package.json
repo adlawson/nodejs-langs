@@ -1,43 +1,53 @@
 {
-  "name": "langs",
+  "name": "langs-es",
   "version": "3.0.0",
   "description": "ISO 639-1/2/3 Language codes with English and local names",
   "keywords": [
-      "639",
-      "639-1",
-      "639-2",
-      "639-3",
-      "iso",
-      "iso639",
-      "lang",
-      "langs",
-      "language",
-      "languages"
+    "639",
+    "639-1",
+    "639-2",
+    "639-3",
+    "iso",
+    "iso639",
+    "lang",
+    "langs",
+    "language",
+    "languages",
+    "es",
+    "esm",
+    "ts"
   ],
   "license": "MIT",
   "type": "module",
   "exports": {
-      ".": {
-          "import": "./dist/index.mjs",
-          "require": "./dist/index.cjs"
-      }
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
   },
   "main": "./dist/index.cjs",
   "files": [
-      "dist"
+    "dist"
   ],
   "scripts": {
-      "postinstall": "node postinstall.js",
-      "test": "node_modules/.bin/mocha --ui tdd --reporter spec test/cjs test/esm",
-      "build": "unbuild"
+    "postinstall": "node util/postinstall.js",
+    "test": "mocha test/cjs test/esm",
+    "build": "unbuild",
+    "lint": "node util/lint.js"
   },
   "repository": {
-      "type": "git",
-      "url": "git@github.com:adlawson/nodejs-langs.js"
+    "type": "git",
+    "url": "git@github.com:zxanderh/nodejs-langs.git"
   },
   "devDependencies": {
-      "chai": "^4.4.1",
-      "mocha": "^8.4.0",
-      "unbuild": "^2.0.0"
+    "@typescript-eslint/eslint-plugin": "^6.20.0",
+    "@typescript-eslint/parser": "^6.20.0",
+    "chai": "^4.4.1",
+    "eslint": "^8.56.0",
+    "eslint-plugin-mocha": "^10.2.0",
+    "markdownlint-cli": "^0.37.0",
+    "mocha": "^8.4.0",
+    "typescript": "^5.3.3",
+    "unbuild": "^2.0.0"
   }
 }
